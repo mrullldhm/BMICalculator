@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+
+    <!-- Set the viewport to make the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of the page -->
+    <title>BMI Calculator</title>
+
+    <!-- Link the CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main content area for the BMI calculator -->
+    <div id="content">
+        <!-- Main heading for the BMI calculator -->
+        <h1>BMI CALCULATOR</h1>
+
+        <!-- Container for the calculator -->
+        <div id="calculator">        
+            <!-- Row for entering weight -->
+            <div class="row">
+                <span>Weight</span> 
+                <input type="number" id="weight" min="1" value=""> 
+                <span>Kg</span>
+            </div>
+
+            <!-- Row for entering height -->
+            <div class="row">
+                <span>Height</span> 
+                <input type="number" id="height" min="1" value=""> 
+                <span>Cm</span>
+            </div>
+            
+            <!-- Button to calculate BMI -->
+            <div class="row">
+                <button onclick="calculateBMI()">Calculate BMI</button>
+            </div>
+
+            <!-- Result and description area -->
+            <div id="result-row">
+                <div id="result"></div>
+                <div id="description"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background image container -->
+    <div id="wallpaper"></div>
+
+    <!-- Link to the JavaScript file to handle BMI calculation -->
+    <script src="bmi.js"></script>
+</body>
+</html>

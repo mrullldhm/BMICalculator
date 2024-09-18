@@ -1,0 +1,76 @@
+/* Reset margins and padding for all elements and set box-sizing to border-box */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Set the body to take up the entire height of the viewport and use flexbox for layout */
+body {
+    display: flex; /* Enable flexbox layout */
+    height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+/* Style the main content area: center it and set a background color */
+#content {
+    display: flex; /* Enable flexbox for the content area */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    background-color: #d2a488; /* Set background color */
+    flex: 1; /* Allow this element to grow and fill available space */
+}
+
+/* Style the wallpaper background area */
+#wallpaper {
+    flex: 1; /* Allow this element to grow and fill available space */
+    background-image: url('img/running.jpeg'); /* Set background image */
+    background-size: cover; /* Cover the entire area with the image */
+    background-position: center; /* Center the background image */
+}
+
+/* Style the calculator container */
+#calculator {
+    margin: 1em; /* Add margin around the calculator */
+    padding: 1.5em; /* Add padding inside the calculator */
+    background-color: rgb(255, 255, 255); /* Set background color to white */
+    border-radius: 1em; /* Round the corners of the calculator */
+    box-shadow: 0 1em 1em black; /* Add shadow for depth */
+    border: 1px solid #701e1e; /* Add a solid border with a specific color */
+}
+
+/* Style individual rows inside the calculator */
+#calculator .row {
+    display: flex; /* Enable flexbox for each row */
+    justify-content: center; /* Center items horizontally within the row */
+    align-items: center; /* Center items vertically within the row */
+    margin-bottom: 1em; /* Add space below each row */
+}
+
+/* Style for the first child span in each row (the label) */
+#calculator .row span:first-child {
+    width: 4em; /* Set a fixed width for the label */
+    display: inline-block; /* Make the label inline-block for alignment */
+}
+
+/* Style for number input fields in the calculator */
+#calculator .row input[type=number] {
+    width: 10em; /* Set a fixed width for the input fields */
+}
+
+/* Style for the calculate button */
+#calculator button {
+    display: block; /* Make the button a block element */
+    width: 100%; /* Set the button to take up full width */
+    height: 2em; /* Set a fixed height for the button */
+    background-color: #413730; /* Set the background color of the button */
+    color: white; /* Set the text color to white */
+}
+
+/* Style for the result and description area */
+#result-row {
+    display: flex; /* Enable flexbox for the result area */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+}
