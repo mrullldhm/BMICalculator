@@ -39,13 +39,13 @@ function calculateBMI() {
 function getBMICategory(bmi) {
     if (bmi < 18.5) {
         return "You are underweight. Focus on maintaining a balanced diet and incorporating healthy, nutrient-dense foods.";
-    } else if (bmi >= 18.5 && bmi <= 24.9) {
+    } else if (bmi >= 18.5 && bmi <= 24.99) {
         return "Great job! You have a normal weight. Keep maintaining a healthy lifestyle with regular exercise and balanced nutrition.";
-    } else if (bmi >= 25 && bmi <= 29.9) {
+    } else if (bmi >= 25 && bmi <= 29.99) {
         return "You are slightly overweight. Consider making small changes to your diet and incorporating more physical activity.";
-    } else if (bmi >= 30 && bmi <= 34.9) {
+    } else if (bmi >= 30 && bmi <= 34.99) {
         return "You are in Obese Class 1. Focus on healthier eating habits and increasing your activity levels.";
-    } else if (bmi >= 35 && bmi <= 39.9) {
+    } else if (bmi >= 35 && bmi <= 39.99) {
         return "You are in Obese Class 2. Consider seeking guidance from a healthcare professional.";
     } else {
         return "You are in Obese Class 3. It's critical to take immediate steps to improve your health. Consult a healthcare professional.";
